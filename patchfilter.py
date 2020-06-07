@@ -361,6 +361,12 @@ def main():
     zap_line_in_file("b/options.conf", "nodebug = false")
     zap_line_in_file("b/options.conf", "domain =")
     zap_line_in_file("b/options.conf", "domain = ")
+    zap_line_in_file("b/options.conf", "# ignore missing build ids")
+    zap_line_in_file("b/options.conf", "nomissingbuildids = false")
+    zap_line_in_file("b/options.conf", "# disable automatic requeriments processing")
+    zap_line_in_file("b/options.conf", "noautoreq = false")
+    zap_line_in_file("b/options.conf", "# disable automatic provides processing")
+    zap_line_in_file("b/options.conf", "noautoprov = false")
 
     zap_line_in_file("b/buildreq_add", "# This file contains additional build requirements that did not get")
     zap_line_in_file("b/buildreq_add", "# picked up automatically. One name per line, no whitespace.")
